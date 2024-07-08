@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+<!--            display: flex;-->
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h2 {
+            font-size: 4em;
+            color: #fff;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 3s ease-in-out forwards, scaleText 2s ease-in-out infinite alternate;
+        }
+h3{
+color:white;
+              text-align: center;
+}
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes scaleText {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <h2>{{my_string}}</h2>
+    <h3>{{sug_string}}</h3>
+</body>
+</html>
